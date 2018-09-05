@@ -1,0 +1,37 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>
+                Menu
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list>
+            <button ion-item inset *ngFor="let usuario of user" (click)="irAPagina(Usuario)">
+            <ion-thumbnail item-left *ngIf="conexion">
+                <img src="{{usuario.imagen}}">
+            </ion-thumbnail>
+            <h3 *ngIf="conexion">{{usuario.nombre}}</h3>
+        </button>
+
+            <button ion-item *ngIf="conexion" (click)="irAPagina(Home)">
+        Home
+        </button>
+            <button ion-item *ngIf="conexion" (click)="irAPagina(Mapa)">
+        Bloque A
+        </button>
+            <button ion-item *ngIf="conexion" (click)="irAPagina(BloqueB)">
+        Bloque B
+        </button>
+            <button ion-item *ngIf="conexion" (click)="irAPagina(Enlaces)">
+        Enlaces
+        </button>
+        <button color="danger" ion-button block *ngIf="conexion" (click)="cerrarSesion()">
+        Cerrar Sesión
+        </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content></ion-nav>

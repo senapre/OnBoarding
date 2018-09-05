@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Misión y Visión</ion-title>
+        <ion-buttons left>
+            <button ion-button (click)="cerrar()">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <p>De acuerdo con el video, ¿En que se relaciona la mision y la vision de Tuscany con tu proyecto de vida?</p>
+    <ion-textarea rows="10" placeholder="Deja aqui tu respuesta" type="Text" [(ngModel)]="respuesta"></ion-textarea>
+    <button ion-button full round (click)="enviar()">
+            <div>
+                <ion-icon name="send"></ion-icon>
+                <br/>
+                <label>Enviar respuesta</label>
+            </div>
+        </button>
+</ion-content>

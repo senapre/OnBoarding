@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Enlaces</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-fab top right edge>
+        <button ion-fab mini (click)="irHome()">
+            <ion-icon name="home"></ion-icon>
+        </button>
+    </ion-fab>
+    <ion-list>
+        <ion-item inset>
+            <ion-avatar item-left>
+                <img src="../../assets/imgs/enlaces/logotus.png">
+            </ion-avatar>
+            <a href="#" onclick="window.open('http://www.tuscanydrilling.com', '_system')"> tuscanydrilling.com </a>
+        </ion-item>
+        <ion-item inset>
+            <ion-avatar item-left>
+                <img src="../../assets/imgs/enlaces/sharepoint.png">
+            </ion-avatar>
+            <a href="#" onclick="window.open('https://tuscanydrilling.sharepoint.com/sites/Intranet', '_system')">Conecta</a>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-left>
+                <img src="../../assets/imgs/enlaces/sig.png">
+            </ion-avatar>
+            <a onclick="window.open('https://tuscanydrilling.sharepoint.com/sites/Intranet/sig/default.aspx', '_system')" href="#"> Sistema
+                Integrado de Gestión</a>
+        </ion-item>
+    </ion-list>

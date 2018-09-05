@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title> Bloque A </ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content overflow-scroll="true">
+    <ion-fab top right edge>
+        <button ion-fab (click)="irHome()"><ion-icon name="home"></ion-icon></button>
+    </ion-fab>
+   <!-- <ion-scroll scrollX="true" scrollY="true" style="width: 100%; height: 100%"></ion-scroll>
+
+     <div style="width: 640px; height: 640px;">-->
+    <img src="../../assets/imgs/Mapa/BloqA.png" alt="" usemap="#Map" />
+    <map name="Map" id="Map">
+        <area alt="" title="Induccion General" href="#" shape="rect" coords="82,204,187,277" (click)="induccion()" />
+        <area alt="" title="Herramientas Movil" href="#" shape="rect" coords="354,169,460,247" (click)="herramientasMov()" />
+        <area alt="" title="Aspectos Logisticos" href="#" shape="rect" coords="237,305,358,389" (click)="aspectos()" />
+        <area alt="" title="Capacitación" href="#" shape="rect" coords="79,432,173,513" (click)="capacitacion()" />
+        <area alt="" title="Herramientas de Colaboracion" href="#" shape="rect" coords="334,470,428,561" (click)="herramientas()"
+        />
+        <area alt="" title="Acceso a Sistemas" href="#" shape="rect" coords="455,319,561,417" (click)="acceso()" />
+    </map>
+    <!-- </div> 
+
+    <script src="jquery.rwdImageMaps.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[Map]').rwdImageMaps();
+
+        });
+    </script>
+    </ion-scroll>-->
+</ion-content>

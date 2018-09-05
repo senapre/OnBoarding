@@ -1,0 +1,31 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Actividad 2</ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-fab top right edge>
+        <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+        <ion-fab-list>
+            <button ion-fab (click)="irHome()"><ion-icon name="home"></ion-icon></button>
+            <button ion-fab (click)="GoBack()"><ion-icon name="md-arrow-round-back"></ion-icon></button>
+        </ion-fab-list>
+    </ion-fab>
+    <ion-card>
+        <ion-card-header align="center">RETO #1</ion-card-header>
+        <ion-card-content>
+            <h2>Para este reto debes tomarte una foto con Cristian Ballen.</h2>
+        </ion-card-content>
+    </ion-card>
+    <button ion-button full round (click)="getPicture()">
+<ion-icon name="camera"></ion-icon>
+    </button>
+    <img [src]="image" *ngIf="image" />
+</ion-content>
